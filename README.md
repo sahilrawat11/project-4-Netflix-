@@ -209,7 +209,9 @@ FROM netflix
 WHERE director IS NULL;
 ```
 
-**Objective:** List content that does not have a director.
+**Objective:**
+
+List content that does not have a director.
 
 ### 13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years
 
@@ -220,7 +222,9 @@ WHERE casts LIKE '%Salman Khan%'
   AND release_year > EXTRACT(YEAR FROM CURRENT_DATE) - 10;
 ```
 
-**Objective:** Count the number of movies featuring 'Salman Khan' in the last 10 years.
+**Objective:** 
+
+Count the number of movies featuring 'Salman Khan' in the last 10 years.
 
 ### 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
 
@@ -235,7 +239,9 @@ ORDER BY COUNT(*) DESC
 LIMIT 10;
 ```
 
-**Objective:** Identify the top 10 actors with the most appearances in Indian-produced movies.
+**Objective:**
+
+Identify the top 10 actors with the most appearances in Indian-produced movies.
 
 ### 15. Categorize Content Based on the Presence of 'Kill' and 'Violence' Keywords
 
@@ -254,17 +260,20 @@ FROM (
 GROUP BY category;
 ```
 
-**Objective:** Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
+**Objective:** 
+
+Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
 
 ## Findings and Conclusion
 
 - **Content Distribution:** The dataset contains a diverse range of movies and TV shows with varying ratings and genres.
+
+
 - **Common Ratings:** Insights into the most common ratings provide an understanding of the content's target audience.
+
+
 - **Geographical Insights:** The top countries and the average content releases by India highlight regional content distribution.
+
 - **Content Categorization:** Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
 
 This analysis provides a comprehensive view of Netflix's content and can help inform content strategy and decision-making.
-
-
-
-## Author - Sahil Rawat
